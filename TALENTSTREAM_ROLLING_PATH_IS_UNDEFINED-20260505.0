@@ -1,0 +1,198 @@
+05-05-2026_13:11:34.095{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+05-05-2026_13:11:34.114{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 25.0.2 on SYMP-WS1052 with PID 2284 (C:\Users\Sampath\Desktop\backend\TalentStreamBE\target\classes started by Sampath in C:\Users\Sampath\Desktop\backend\TalentStreamBE)
+05-05-2026_13:11:34.115{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+05-05-2026_13:11:34.116{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|The following 1 profile is active: "${SPRING_PROFILES_ACTIVE}"
+05-05-2026_13:11:34.176{UTC}|report-tool|INFO ||o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+05-05-2026_13:11:34.176{UTC}|report-tool|INFO ||o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+05-05-2026_13:11:35.456{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+05-05-2026_13:11:35.714{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 250 ms. Found 59 JPA repository interfaces.
+05-05-2026_13:11:36.582{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+05-05-2026_13:11:36.596{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-8081"]
+05-05-2026_13:11:36.597{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+05-05-2026_13:11:36.598{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+05-05-2026_13:11:36.775{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+05-05-2026_13:11:36.776{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2599 ms
+05-05-2026_13:11:36.972{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+05-05-2026_13:11:37.017{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+05-05-2026_13:11:37.171{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+05-05-2026_13:11:37.262{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariCP - Starting...
+05-05-2026_13:11:38.097{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariCP - Start completed.
+05-05-2026_13:11:38.112{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+05-05-2026_13:11:50.404{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+05-05-2026_13:11:50.429{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+05-05-2026_13:11:50.836{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+05-05-2026_13:11:51.245{UTC}|report-tool|WARN ||c.t.AwsSecretProvider|No secret name provided and legacy AwsSecretsManagerUtil didn't return usable JSON. Secrets will not be loaded from AWS Secrets Manager in this runtime.
+05-05-2026_13:11:51.246{UTC}|report-tool|WARN ||c.t.c.SecretConfig|AI Secret JSON not found. Returning default AiConfig.
+05-05-2026_13:11:51.523{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+05-05-2026_13:11:51.917{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+05-05-2026_13:11:51.930{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+05-05-2026_13:11:52.650{UTC}|report-tool|INFO ||c.t.c.GeminiController|GeminiController initialized successfully
+05-05-2026_13:11:52.943{UTC}|report-tool|INFO ||c.t.c.SecretConfig|No aws.secrets.name provided in properties and AWS_SECRETS_NAME not set. Attempting to load secrets via legacy env util (if present).
+05-05-2026_13:11:52.943{UTC}|report-tool|WARN ||c.t.AwsSecretProvider|No secret name provided and legacy AwsSecretsManagerUtil didn't return usable JSON. Secrets will not be loaded from AWS Secrets Manager in this runtime.
+05-05-2026_13:11:52.943{UTC}|report-tool|WARN ||c.t.c.SecretConfig|Secret JSON not available. Returning empty SecretProperties. In production, set AWS_SECRETS_NAME or aws.secrets.name and ensure IAM permissions.
+05-05-2026_13:11:53.315{UTC}|report-tool|INFO ||o.s.b.d.a.OptionalLiveReloadServer|LiveReload server is running on port 35729
+05-05-2026_13:11:53.489{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f9bd598, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44442755, org.springframework.security.web.context.SecurityContextPersistenceFilter@518190a4, org.springframework.security.web.header.HeaderWriterFilter@36f73ef6, org.springframework.security.web.authentication.logout.LogoutFilter@4e6d9883, com.talentstream.filter.JwtRequestFilter@2fe581e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b35c7dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@445db2ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24e4565e, org.springframework.security.web.session.SessionManagementFilter@5b7d34ba, org.springframework.security.web.access.ExceptionTranslationFilter@fc45b27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15c429b8]
+05-05-2026_13:11:53.764{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-8081"]
+05-05-2026_13:11:53.787{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+05-05-2026_13:11:54.969{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 21.223 seconds (JVM running for 22.364)
+05-05-2026_13:11:55.032{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+05-05-2026_13:11:55.033{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+05-05-2026_13:11:55.034{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 1 ms
+05-05-2026_13:59:59.991{UTC}|report-tool|DEBUG||c.t.s.BlogService|fetchAndSaveTechNews - starting news fetch
+05-05-2026_14:00:00.005{UTC}|report-tool|DEBUG||c.t.s.BlogService|initializeApiKeys - fetching API keys from AWS Secrets Manager
+05-05-2026_14:00:00.028{UTC}|report-tool|ERROR||c.t.s.BlogService|initializeApiKeys - failed to read API keys
+java.lang.IllegalArgumentException: argument "content" is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:4829)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3074)
+	at com.talentstream.service.BlogService.initializeApiKeys(BlogService.java:78)
+	at com.talentstream.service.BlogService.fetchAndSaveTechNews(BlogService.java:96)
+	at com.talentstream.Schedular.BlogScheduler.fetchTechNewsThreeTimesDaily(BlogScheduler.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+05-05-2026_14:00:00.031{UTC}|report-tool|ERROR||c.t.s.BlogService|fetchAndSaveTechNews - unexpected error: Failed to load API keys from AWS Secrets Manager
+com.talentstream.exception.CustomException: Failed to load API keys from AWS Secrets Manager
+	at com.talentstream.service.BlogService.initializeApiKeys(BlogService.java:85)
+	at com.talentstream.service.BlogService.fetchAndSaveTechNews(BlogService.java:96)
+	at com.talentstream.Schedular.BlogScheduler.fetchTechNewsThreeTimesDaily(BlogScheduler.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+05-05-2026_14:00:00.031{UTC}|report-tool|ERROR||o.s.s.s.TaskUtils$LoggingErrorHandler|Unexpected error occurred in scheduled task
+com.talentstream.exception.CustomException: Error fetching or saving tech news: Failed to load API keys from AWS Secrets Manager
+	at com.talentstream.service.BlogService.fetchAndSaveTechNews(BlogService.java:130)
+	at com.talentstream.Schedular.BlogScheduler.fetchTechNewsThreeTimesDaily(BlogScheduler.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+05-05-2026_14:49:59.132{UTC}|report-tool|WARN ||c.z.h.p.HikariPool|HikariCP - Thread starvation or clock leap detected (housekeeper delta=42m20s111ms119µs).
+05-05-2026_16:40:25.593{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendNotificationToStreakMaintainers - entry applicantCount=24
+05-05-2026_16:40:25.593{UTC}|report-tool|DEBUG||c.t.s.NotificationMessageService|Sending In-App notifications - entry :  feature=You haven’t completed today’s test yet. Attempt now and keep your streak alive 🔥, featureId=null, applicantCount=24
+05-05-2026_16:40:25.792{UTC}|report-tool|INFO ||c.t.s.NotificationMessageService|Sending In-App notifications - saved notification for featureId=null to 24 applicants
+05-05-2026_16:40:26.640{UTC}|report-tool|INFO ||c.t.s.FirebaseMessagingService|sendNotificationToStreakMaintainers - sending to 37 tokens
+05-05-2026_16:40:26.641{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - entry tokenCount=37, title=⏰ Streak Reminder: Don’t Break Your Streak!
+05-05-2026_16:40:27.621{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fZBHQfKWL6...
+05-05-2026_16:40:27.819{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): cY_20Eg_LV...
+05-05-2026_16:40:28.030{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fTnXGXLoxm...
+05-05-2026_16:40:28.225{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fVmKAC1odV...
+05-05-2026_16:40:28.419{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dvyyg8dQro...
+05-05-2026_16:40:28.579{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): ezx0eRobMw...
+05-05-2026_16:40:29.058{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): ez0fnaB2SS...
+05-05-2026_16:40:29.212{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): da46aBXyJ5...
+05-05-2026_16:40:29.402{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dEsHw4d0oO...
+05-05-2026_16:40:29.527{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): eS9yz-YI0s...
+05-05-2026_16:40:29.686{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dvyyg8dQro...
+05-05-2026_16:40:29.860{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): ezx0eRobMw...
+05-05-2026_16:40:30.092{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dktpTxw7le...
+05-05-2026_16:40:30.240{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fZBHQfKWL6...
+05-05-2026_16:40:30.427{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fZBHQfKWL6...
+05-05-2026_16:40:30.620{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): eGpCBrQ-A0...
+05-05-2026_16:40:33.425{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dsfyDkf2Tz...
+05-05-2026_16:40:33.591{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dsfyDkf2Tz...
+05-05-2026_16:40:33.741{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dsfyDkf2Tz...
+05-05-2026_16:40:33.883{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): epIkywx84w...
+05-05-2026_16:40:36.950{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fOo6f9mykh...
+05-05-2026_16:40:37.137{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): cNI02nsIyA...
+05-05-2026_16:40:37.493{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): eiIU5rC132...
+05-05-2026_16:40:37.880{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dNixhyEVoh...
+05-05-2026_16:40:38.093{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): cNI02nsIyA...
+05-05-2026_16:40:38.269{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fVmKAC1odV...
+05-05-2026_16:40:38.408{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fVmKAC1odV...
+05-05-2026_16:40:38.557{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): cbuEnPhDRf...
+05-05-2026_16:40:38.767{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fTcUSpXJJi...
+05-05-2026_16:40:40.614{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): fOo6f9mykh...
+05-05-2026_16:40:40.765{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dnQZgPbgR9...
+05-05-2026_16:40:40.917{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): eVALbWM1Qu...
+05-05-2026_16:40:41.067{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dnQZgPbgR9...
+05-05-2026_16:40:41.189{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dnQZgPbgR9...
+05-05-2026_16:40:41.371{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): eLO5pfNCOU...
+05-05-2026_16:40:41.515{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dILw4YYESH...
+05-05-2026_16:40:41.662{UTC}|report-tool|DEBUG||c.t.s.FirebaseMessagingService|sendToTokens - sent to token (truncated): dEMYuhQLnE...
+05-05-2026_16:40:41.662{UTC}|report-tool|INFO ||c.t.s.FirebaseMessagingService|sendToTokens - completed: sent=37, failed=0
+05-05-2026_17:59:59.958{UTC}|report-tool|INFO ||c.t.S.StreakScheduler|Streak Scheduler started
+05-05-2026_18:00:00.212{UTC}|report-tool|DEBUG||c.t.s.StreakService|Attempting to fetch questions from AI (attempt 1/2)
+05-05-2026_18:00:00.212{UTC}|report-tool|WARN ||c.t.s.StreakService|Attempt 1 failed: Groq API key is missing
+05-05-2026_18:00:00.212{UTC}|report-tool|DEBUG||c.t.s.StreakService|Attempting to fetch questions from AI (attempt 2/2)
+05-05-2026_18:00:00.212{UTC}|report-tool|WARN ||c.t.s.StreakService|Attempt 2 failed: Groq API key is missing
+05-05-2026_18:00:00.212{UTC}|report-tool|ERROR||c.t.s.StreakService|AI Question Generation failed after 2 attempts
+com.talentstream.exception.CustomException: Groq API key is missing
+	at com.talentstream.providers.GroqProvider.generate(GroqProvider.java:40)
+	at com.talentstream.service.StreakService.fetchValidQuestions(StreakService.java:103)
+	at com.talentstream.service.StreakService.generateQuestions(StreakService.java:73)
+	at com.talentstream.service.StreakService$$FastClassBySpringCGLIB$$24046049.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.talentstream.service.StreakService$$EnhancerBySpringCGLIB$$8b10cb85.generateQuestions(<generated>)
+	at com.talentstream.Schedular.StreakScheduler.generateDailyQuestions(StreakScheduler.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+05-05-2026_18:00:00.259{UTC}|report-tool|ERROR||c.t.S.StreakScheduler|Error while generating questions in scheduler
+com.talentstream.exception.CustomException: AI Question Generation failed
+	at com.talentstream.service.StreakService.fetchValidQuestions(StreakService.java:120)
+	at com.talentstream.service.StreakService.generateQuestions(StreakService.java:73)
+	at com.talentstream.service.StreakService$$FastClassBySpringCGLIB$$24046049.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.talentstream.service.StreakService$$EnhancerBySpringCGLIB$$8b10cb85.generateQuestions(<generated>)
+	at com.talentstream.Schedular.StreakScheduler.generateDailyQuestions(StreakScheduler.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+05-05-2026_18:00:00.259{UTC}|report-tool|INFO ||c.t.S.StreakScheduler|Streak Scheduler finished

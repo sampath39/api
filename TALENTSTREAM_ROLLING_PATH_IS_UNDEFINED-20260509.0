@@ -1,0 +1,133 @@
+09-05-2026_11:30:28.976{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+09-05-2026_11:30:28.999{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 25.0.2 on SYMP-WS1052 with PID 8112 (C:\Users\Sampath\Desktop\backend\TalentStreamBE\target\classes started by Sampath in C:\Users\Sampath\Desktop\backend\TalentStreamBE)
+09-05-2026_11:30:29.000{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+09-05-2026_11:30:29.000{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|The following 1 profile is active: "${SPRING_PROFILES_ACTIVE}"
+09-05-2026_11:30:29.073{UTC}|report-tool|INFO ||o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor|Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09-05-2026_11:30:29.073{UTC}|report-tool|INFO ||o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor|For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09-05-2026_11:30:31.570{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-05-2026_11:30:31.869{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 272 ms. Found 59 JPA repository interfaces.
+09-05-2026_11:30:32.778{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+09-05-2026_11:30:32.788{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-8081"]
+09-05-2026_11:30:32.791{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+09-05-2026_11:30:32.792{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+09-05-2026_11:30:32.979{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+09-05-2026_11:30:32.979{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 3906 ms
+09-05-2026_11:30:33.206{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+09-05-2026_11:30:33.272{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+09-05-2026_11:30:33.535{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09-05-2026_11:30:33.705{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariCP - Starting...
+09-05-2026_11:30:34.691{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariCP - Start completed.
+09-05-2026_11:30:34.729{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+09-05-2026_11:30:44.896{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-05-2026_11:30:44.944{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-05-2026_11:30:45.382{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+09-05-2026_11:30:45.850{UTC}|report-tool|WARN ||c.t.AwsSecretProvider|No secret name provided and legacy AwsSecretsManagerUtil didn't return usable JSON. Secrets will not be loaded from AWS Secrets Manager in this runtime.
+09-05-2026_11:30:45.850{UTC}|report-tool|WARN ||c.t.c.SecretConfig|AI Secret JSON not found. Returning default AiConfig.
+09-05-2026_11:30:46.128{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-05-2026_11:30:46.468{UTC}|report-tool|INFO ||o.s.d.p.DefaultProjectionInformation$PropertyDescriptorSource|Couldn't read class metadata for interface java.util.Map. Input property calculation might fail
+09-05-2026_11:30:46.481{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+09-05-2026_11:30:47.155{UTC}|report-tool|INFO ||c.t.c.GeminiController|GeminiController initialized successfully
+09-05-2026_11:30:47.390{UTC}|report-tool|INFO ||c.t.c.SecretConfig|No aws.secrets.name provided in properties and AWS_SECRETS_NAME not set. Attempting to load secrets via legacy env util (if present).
+09-05-2026_11:30:47.391{UTC}|report-tool|WARN ||c.t.AwsSecretProvider|No secret name provided and legacy AwsSecretsManagerUtil didn't return usable JSON. Secrets will not be loaded from AWS Secrets Manager in this runtime.
+09-05-2026_11:30:47.391{UTC}|report-tool|WARN ||c.t.c.SecretConfig|Secret JSON not available. Returning empty SecretProperties. In production, set AWS_SECRETS_NAME or aws.secrets.name and ensure IAM permissions.
+09-05-2026_11:30:47.720{UTC}|report-tool|INFO ||o.s.b.d.a.OptionalLiveReloadServer|LiveReload server is running on port 35729
+09-05-2026_11:30:47.949{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c8ea6ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a559b58, org.springframework.security.web.context.SecurityContextPersistenceFilter@17914bf9, org.springframework.security.web.header.HeaderWriterFilter@17fa0e91, org.springframework.security.web.authentication.logout.LogoutFilter@1a6074fc, com.talentstream.filter.JwtRequestFilter@63bb1d85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@109c4568, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ecfa1ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74541f46, org.springframework.security.web.session.SessionManagementFilter@331ed063, org.springframework.security.web.access.ExceptionTranslationFilter@81c0912, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a956b7f]
+09-05-2026_11:30:48.205{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-8081"]
+09-05-2026_11:30:48.228{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+09-05-2026_11:30:48.857{UTC}|report-tool|ERROR||s.d.s.w.p.DocumentationPluginsBootstrapper|Unable to scan documentation context default
+java.lang.IllegalStateException: Ambiguous models equality when conditions is empty.
+	at springfox.documentation.spring.web.scanners.ApiModelReader.checkCondition(ApiModelReader.java:618)
+	at springfox.documentation.spring.web.scanners.ApiModelReader.mergeConditions(ApiModelReader.java:385)
+	at springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelBranch(ApiModelReader.java:255)
+	at springfox.documentation.spring.web.scanners.ApiModelReader.lambda$mergeModelBranch$6(ApiModelReader.java:197)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelBranch(ApiModelReader.java:197)
+	at springfox.documentation.spring.web.scanners.ApiModelReader.lambda$read$2(ApiModelReader.java:145)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at springfox.documentation.spring.web.scanners.ApiModelReader.read(ApiModelReader.java:145)
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:154)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:67)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.scanDocumentation(AbstractDocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.AbstractDocumentationPluginsBootstrapper.bootstrapDocumentationPlugins(AbstractDocumentationPluginsBootstrapper.java:82)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:100)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.talentstream.TalentStreamApplication.main(TalentStreamApplication.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+09-05-2026_11:30:48.868{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 20.286 seconds (JVM running for 21.476)
+09-05-2026_11:30:48.941{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-05-2026_11:30:48.941{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+09-05-2026_11:30:48.943{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 1 ms
+09-05-2026_14:00:00.016{UTC}|report-tool|DEBUG||c.t.s.BlogService|fetchAndSaveTechNews - starting news fetch
+09-05-2026_14:00:00.016{UTC}|report-tool|DEBUG||c.t.s.BlogService|initializeApiKeys - fetching API keys from AWS Secrets Manager
+09-05-2026_14:00:00.016{UTC}|report-tool|ERROR||c.t.s.BlogService|initializeApiKeys - failed to read API keys
+java.lang.IllegalArgumentException: argument "content" is null
+	at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:4829)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3074)
+	at com.talentstream.service.BlogService.initializeApiKeys(BlogService.java:78)
+	at com.talentstream.service.BlogService.fetchAndSaveTechNews(BlogService.java:96)
+	at com.talentstream.Schedular.BlogScheduler.fetchTechNewsThreeTimesDaily(BlogScheduler.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+09-05-2026_14:00:00.016{UTC}|report-tool|ERROR||c.t.s.BlogService|fetchAndSaveTechNews - unexpected error: Failed to load API keys from AWS Secrets Manager
+com.talentstream.exception.CustomException: Failed to load API keys from AWS Secrets Manager
+	at com.talentstream.service.BlogService.initializeApiKeys(BlogService.java:85)
+	at com.talentstream.service.BlogService.fetchAndSaveTechNews(BlogService.java:96)
+	at com.talentstream.Schedular.BlogScheduler.fetchTechNewsThreeTimesDaily(BlogScheduler.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+09-05-2026_14:00:00.016{UTC}|report-tool|ERROR||o.s.s.s.TaskUtils$LoggingErrorHandler|Unexpected error occurred in scheduled task
+com.talentstream.exception.CustomException: Error fetching or saving tech news: Failed to load API keys from AWS Secrets Manager
+	at com.talentstream.service.BlogService.fetchAndSaveTechNews(BlogService.java:130)
+	at com.talentstream.Schedular.BlogScheduler.fetchTechNewsThreeTimesDaily(BlogScheduler.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
