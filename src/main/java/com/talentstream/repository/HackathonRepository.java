@@ -12,6 +12,7 @@ public interface HackathonRepository extends JpaRepository<Hackathon, Long> {
 	
 	public Optional<List<Hackathon>> findByRecruiterId(Long id);
 	Optional<Hackathon> findById(Long id);
+	Optional<Hackathon> findByTitleIgnoreCase(String title);
 	
 	 @Query("SELECT COUNT(h) FROM Hackathon h WHERE h.winner = :winnerId")
 	 Long countByWinnerId(Long winnerId);

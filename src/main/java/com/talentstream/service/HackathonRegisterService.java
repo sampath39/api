@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -20,6 +22,7 @@ import java.util.Optional;
 
 @Service
 public class HackathonRegisterService {
+	private static final Logger logger = LoggerFactory.getLogger(HackathonRegisterService.class);
 	private final HackathonRegisterRepository repo;
 	@Autowired
 	private ApplicantProfileRepository appProRepo;
@@ -101,5 +104,35 @@ public class HackathonRegisterService {
 		    }
 		}
 
-	
+	public long getTotalRegistrationCount() {
+		try {
+			return repo.countByRegistrationStatusTrue();
+		} catch (Exception e) {
+			logger.error("Error fetching total hackathon registrations", e);
+			throw new IllegalStateException("Failed to calculate total hackathon registrations", e);
+		}
+	}
+
+	public long getRegistrationCountByHackathon(Long hackathonId) {
+		if (!hackRepo.existsById(hackathonId)) {
+			throw new IllegalArgumentException("Hackathon not found with id: " + hackathonId);
+		}
+		try {
+			return repo.countByHackathonIdAndRegistrationStatusTrue(hackathonId);
+		} catch (Exception e) {
+			logger.error("Error fetching registration count for hackathon id: " + hackathonId, e);
+			throw new IllegalStateException("Failed to calculate hackathon registration count for id: " + hackathonId, e);
+		}
+	}
+
+	public long getRegistrationCountByHackathonName(String hackathonName) {
+		Hackathon hackathon = hackRepo.findByTitleIgnoreCase(hackathonName)
+				.orElseThrow(() -> new IllegalArgumentException("Hackathon not found with name: " + hackathonName));
+		try {
+			return repo.countByHackathonIdAndRegistrationStatusTrue(hackathon.getId());
+		} catch (Exception e) {
+			logger.error("Error fetching registration count for hackathon name: " + hackathonName, e);
+			throw new IllegalStateException("Failed to calculate hackathon registration count for name: " + hackathonName, e);
+		}
+	}
 }

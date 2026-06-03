@@ -3,6 +3,8 @@ package com.talentstream.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import org.springframework.data.repository.query.Param;
+
 import com.talentstream.entity.HackathonRegister;
 
 import java.util.List;
@@ -16,4 +18,7 @@ public interface HackathonRegisterRepository extends JpaRepository<HackathonRegi
     
     @Query("SELECT COUNT(hr) FROM HackathonRegister hr WHERE hr.userId = :userId")
     Long countByUserId(Long userId);
+
+    long countByRegistrationStatusTrue();
+    long countByHackathonIdAndRegistrationStatusTrue(Long hackathonId);
 }

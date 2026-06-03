@@ -128,7 +128,8 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 					    "/mentorfeedback/forms/*",
 					    "/mentorfeedback/forms/*/duplicate",
 					    "/mentorfeedback/form/*/responses","/applicant/refreshToken",
-                        "/api/questions/**", "/api/submissions/**", "/codelab-status", "/api/codelab/**")
+                        "/api/questions/**", "/api/submissions/**", "/codelab-status", "/api/codelab/**",
+						"/hackathons/registrations/count")
 				.permitAll()
 				// Additional antMatchers for Swagger
 				.antMatchers(HttpMethod.GET, "/v2/api-docs", "/swagger-ui/**", "/swagger-resources/**", "/webjars/**")
