@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -110,6 +111,16 @@ public class HackathonRegisterService {
 		} catch (Exception e) {
 			logger.error("Error fetching total hackathon registrations", e);
 			throw new IllegalStateException("Failed to calculate total hackathon registrations", e);
+		}
+	}
+
+	public long getActiveAndUpcomingRegistrationCount() {
+		try {
+			List<HackathonStatus> statuses = Arrays.asList(HackathonStatus.ACTIVE, HackathonStatus.UPCOMING);
+			return repo.countByHackathonStatusIn(statuses);
+		} catch (Exception e) {
+			logger.error("Error fetching active/upcoming hackathon registrations", e);
+			throw new IllegalStateException("Failed to calculate active/upcoming hackathon registration count", e);
 		}
 	}
 

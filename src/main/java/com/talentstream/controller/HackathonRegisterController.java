@@ -149,8 +149,8 @@ public class HackathonRegisterController {
                                        .map(com.talentstream.entity.Hackathon::getTitle)
                                        .orElse(hackathonName);
             } else {
-                count = service.getTotalRegistrationCount();
-                resolvedName = "All Hackathons";
+                count = service.getActiveAndUpcomingRegistrationCount();
+                resolvedName = "Active & Upcoming Hackathons";
             }
             RegistrationCountDTO response = new RegistrationCountDTO(count, resolvedName);
             return ResponseEntity.ok(response);
