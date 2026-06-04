@@ -160,8 +160,8 @@ public class HackathonRegisterController {
                 count = service.getRegistrationCountByStatus(hackathonStatus);
                 resolvedName = status.substring(0, 1).toUpperCase() + status.substring(1).toLowerCase() + " Hackathons";
             } else {
-                count = service.getActiveAndUpcomingRegistrationCount();
-                resolvedName = "Active & Upcoming Hackathons";
+                count = service.getTotalRegistrationCount();
+                resolvedName = "All Hackathons";
             }
             RegistrationCountDTO response = new RegistrationCountDTO(count, resolvedName);
             return ResponseEntity.ok(response);
