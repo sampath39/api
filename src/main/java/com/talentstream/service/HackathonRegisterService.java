@@ -124,6 +124,16 @@ public class HackathonRegisterService {
 		}
 	}
 
+	public long getRegistrationCountByStatus(HackathonStatus status) {
+		try {
+			List<HackathonStatus> statuses = Arrays.asList(status);
+			return repo.countByHackathonStatusIn(statuses);
+		} catch (Exception e) {
+			logger.error("Error fetching registration count for status: " + status, e);
+			throw new IllegalStateException("Failed to calculate registration count for status: " + status, e);
+		}
+	}
+
 	public long getRegistrationCountByHackathon(Long hackathonId) {
 		if (!hackRepo.existsById(hackathonId)) {
 			throw new IllegalArgumentException("Hackathon not found with id: " + hackathonId);

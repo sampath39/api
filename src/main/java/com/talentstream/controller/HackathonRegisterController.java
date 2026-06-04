@@ -134,7 +134,8 @@ public class HackathonRegisterController {
     @GetMapping("/registrations/count")
     public ResponseEntity<?> getTotalRegistrationCount(
             @RequestParam(required = false) Long hackathonId,
-            @RequestParam(required = false) String hackathonName) {
+            @RequestParam(required = false) String hackathonName,
+            @RequestParam(required = false) String status) {
         try {
             long count;
             String resolvedName = null;
@@ -148,6 +149,16 @@ public class HackathonRegisterController {
                 resolvedName = hackRepo.findByTitleIgnoreCase(hackathonName)
                                        .map(com.talentstream.entity.Hackathon::getTitle)
                                        .orElse(hackathonName);
+            } else if (status != null && !status.trim().isEmpty()) {
+                com.talentstream.entity.HackathonStatus hackathonStatus;
+                try {
+                    hackathonStatus = com.talentstream.entity.HackathonStatus.valueOf(status.toUpperCase());
+                } catch (IllegalArgumentException e) {
+                    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                            .body("Invalid status. Valid values are: ACTIVE, UPCOMING, COMPLETED");
+                }
+                count = service.getRegistrationCountByStatus(hackathonStatus);
+                resolvedName = status.substring(0, 1).toUpperCase() + status.substring(1).toLowerCase() + " Hackathons";
             } else {
                 count = service.getActiveAndUpcomingRegistrationCount();
                 resolvedName = "Active & Upcoming Hackathons";
